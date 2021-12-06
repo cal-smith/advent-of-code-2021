@@ -54,7 +54,7 @@ const getAnglePoints = (line: any): Point[] => {
         points.push([i, j]);
         if (startY < endY) {
             j++;
-        } else {
+        } else if (endY < startY) {
             j--;
         }
     }
